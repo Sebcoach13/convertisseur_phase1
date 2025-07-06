@@ -8,7 +8,6 @@ Interface minimaliste et responsive, adaptée aux ordinateurs et mobiles.
 - [Utilisation](#utilisation)
 - [Technologies utilisées](#technologies-utilisées)
 - [Structure du code](#structure-du-code)
-- [Formules](#formules)
 - [Exemples](#exemples)
 - [Fichiers](#fichiers)
 
@@ -18,7 +17,6 @@ Interface minimaliste et responsive, adaptée aux ordinateurs et mobiles.
 2. Entrez une valeur de vitesse dans le champ prévu.
 3. Cliquez sur le bouton **km/h → m/s** pour convertir de kilomètres par heure vers mètres par seconde.
 4. Cliquez sur le bouton **m/s → km/h** pour convertir de mètres par seconde vers kilomètres par heure.
-5. Le résultat s'affiche dans le champ en dessous.
 
 ## Technologies utilisées
 
@@ -31,21 +29,8 @@ Interface minimaliste et responsive, adaptée aux ordinateurs et mobiles.
 - **Mono-page** : tout le code React (JSX) est dans le fichier `index.html` (balise `<script type="text/babel">`).
 - **Aucun module** : pas d’import/export, pas de build, pas de dépendances à installer.
 - **Composants React** : séparation logique entre l’entrée, les boutons et l’affichage du résultat.
-- **Entrées contrôlées** : chaque champ `<input>` est lié à un état React (`useState`).
 - **Résultat en lecture seule** : affiché dans un champ `<input>` en `readOnly`.
 - **Style** : contenu dans le fichier séparé `style.css`.
-
-## Formules
-
-- **km/h → m/s** : `vitesse ÷ 3,6`
-- **m/s → km/h** : `vitesse × 3,6`
-
-## Exemples
-
-| Entrée        | Conversion         | Résultat          |
-|---------------|--------------------|-------------------|
-| `100` (km/h)  | km/h → m/s         | `27.8 m/s`        |
-| `10` (m/s)    | m/s → km/h         | `36.0 km/h`       |
 
 ## Fichiers
 
