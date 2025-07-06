@@ -8,7 +8,6 @@ Interface minimaliste et responsive, adaptée aux ordinateurs et mobiles.
 - [Utilisation](#utilisation)
 - [Technologies utilisées](#technologies-utilisées)
 - [Structure du code](#structure-du-code)
-- [Exemples](#exemples)
 - [Fichiers](#fichiers)
 
 ## Utilisation
