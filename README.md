@@ -54,3 +54,6 @@ Interface minimaliste et responsive, adaptée aux ordinateurs et mobiles.
 - `README.md` : ce fichier d'explications
 
 **Aucune installation requise. Ouvrez simplement `index.html` avec un navigateur moderne.**
+> **Note :**
+> - Les boutons, champs ou composants interactifs ne sont pas rendus dans le README.md.
+> - Pour voir l’application en action, ouvrez le fichier `index.html` dans un navigateur.
