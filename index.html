@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertisseur de vitesse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- React, ReactDOM, Babel CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- App code -->
+    <script type="text/babel">
+      function SpeedInput({ placeholder }) {
+        return <input type="number" placeholder={placeholder} />;
+      }
+      function SpeedButtons({ labelKmhToMs, labelMsToKmh }) {
+        return (
+          <div className="buttons">
+            <button>{labelKmhToMs}</button>
+            <button>{labelMsToKmh}</button>
+          </div>
+        );
+      }
+      function SpeedResult({ placeholder }) {
+        return <input type="text" readOnly placeholder={placeholder} />;
+      }
+      function App() {
+        return (
+          <div className="container">
+            <h1>Convertisseur de vitesse</h1>
+            <SpeedInput placeholder="Entrez la vitesse" />
+            <SpeedButtons labelKmhToMs="km/h → m/s" labelMsToKmh="m/s → km/h" />
+            <SpeedResult placeholder="Résultat" />
+          </div>
+        );
+      }
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>
